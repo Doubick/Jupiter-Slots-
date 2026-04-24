@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Slot Machine - Try Your Luck!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎰 Lucky Slots</h1>
+            <p class="tagline">Spin to Win Big!</p>
+        </header>
+
+        <div class="game-info">
+            <div class="info-card">
+                <span class="label">Balance</span>
+                <span class="value" id="balance">1000</span>
+            </div>
+            <div class="info-card">
+                <span class="label">Bet</span>
+                <span class="value" id="bet">10</span>
+            </div>
+            <div class="info-card">
+                <span class="label">Win</span>
+                <span class="value" id="win">0</span>
+            </div>
+        </div>
+
+        <div class="slot-machine">
+            <div class="reels">
+                <div class="reel" id="reel1">
+                    <div class="symbol">🍒</div>
+                    <div class="symbol">🍋</div>
+                    <div class="symbol">🍊</div>
+                    <div class="symbol">🔔</div>
+                    <div class="symbol">💎</div>
+                    <div class="symbol">👑</div>
+                </div>
+                <div class="reel" id="reel2">
+                    <div class="symbol">🍒</div>
+                    <div class="symbol">🍋</div>
+                    <div class="symbol">🍊</div>
+                    <div class="symbol">🔔</div>
+                    <div class="symbol">💎</div>
+                    <div class="symbol">👑</div>
+                </div>
+                <div class="reel" id="reel3">
+                    <div class="symbol">🍒</div>
+                    <div class="symbol">🍋</div>
+                    <div class="symbol">🍊</div>
+                    <div class="symbol">🔔</div>
+                    <div class="symbol">💎</div>
+                    <div class="symbol">👑</div>
+                </div>
+            </div>
+            <div class="payline"></div>
+        </div>
+
+        <div class="controls">
+            <div class="bet-controls">
+                <button id="betMinus" class="btn-small">−</button>
+                <span class="bet-amount" id="betDisplay">10</span>
+                <button id="betPlus" class="btn-small">+</button>
+            </div>
+            <button id="spinBtn" class="spin-btn">SPIN</button>
+            <button id="autoSpinBtn" class="btn-secondary">Auto Spin (10x)</button>
+        </div>
+
+        <div class="win-message" id="winMessage"></div>
+
+        <div class="paytable">
+            <h3>💰 Paytable</h3>
+            <table>
+                <tr><td>👑👑👑</td><td>1000x Bet</td></tr>
+                <tr><td>💎💎💎</td><td>500x Bet</td></tr>
+                <tr><td>🔔🔔🔔</td><td>100x Bet</td></tr>
+                <tr><td>🍊🍊🍊</td><td>50x Bet</td></tr>
+                <tr><td>🍋🍋🍋</td><td>20x Bet</td></tr>
+                <tr><td>🍒🍒🍒</td><td>10x Bet</td></tr>
+            </table>
+        </div>
+
+        <button id="resetBtn" class="btn-reset">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
