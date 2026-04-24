@@ -173,7 +173,7 @@
       box-shadow: 0 0 24px #ff660055, 0 4px 20px #ff330033;
       border: none;
     }
-    .btn-spin:hover { opacity: 0.92; box-shadow: 0 0 32px #ff660088, 0 4px 24px #ff330055; }
+    .btn-spin:hover { opacity: 0.92; }
     .btn-spin:disabled { opacity: 0.35; cursor: not-allowed; transform: none; box-shadow: none; }
 
     .btn-reset {
@@ -358,6 +358,7 @@
     const jAmt    = document.getElementById('j-amt');
     const canvas  = document.getElementById('confetti');
     const ctx     = canvas.getContext('2d');
+    const app     = document.getElementById('app');
 
     function updateUI() {
       sBal.textContent = balance;
@@ -527,7 +528,6 @@
       document.getElementById('pay-btn').textContent = o ? 'Gewinntabelle ausblenden' : 'Gewinntabelle anzeigen';
     });
 
-    const app = document.getElementById('app');
     buildGrid();
     updateUI();
   </script>
